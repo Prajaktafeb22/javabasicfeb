@@ -13,7 +13,7 @@ public class ReadWritetoFile {
 		File fl=new File("C:\\Users\\DECOMM\\Downloads\\Demo.test");
 		//Writing in the file
 		try {
-			FileWriter wrt=new FileWriter(fl);
+			FileWriter wrt=new FileWriter(fl, true);
 			wrt.write("Hello,How are you?");
 			System.out.println("Written succesfully");
 			wrt.close();
